@@ -15,7 +15,7 @@ const Ul = styled.ul `
         flex-direction: column;
         background: #1567df ;
         position: fixed;
-        transform: ${props => props.open ? 'transtlateX(0)' : 'translateX(100%)'}
+        transform: ${(props) => props.open ? 'translateX(0)' : 'translateX(100%)'};
         top: 0;
         right: 0;
         height: 100vh;
@@ -28,10 +28,10 @@ const Ul = styled.ul `
 
 `
 
-const Navbar = ({props}) => {
+const Navbar = ( {open} ) => {
     return (
         <div>
-            <Ul open={props} >
+            <Ul open={ open } >
                 <li>Home</li>
                 <li>About</li>
                 <li>Github</li>
