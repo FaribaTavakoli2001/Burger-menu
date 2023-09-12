@@ -35,7 +35,7 @@ const Navbar = ( {open} ) => {
                 <li>Home</li>
                 <li>About</li>
                 <li>Github</li>
-                <li>Exit</li>
+                
             </Ul>
         </div>
     );
